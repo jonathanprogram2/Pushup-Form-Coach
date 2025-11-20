@@ -27,22 +27,23 @@ pip install opencv-python mediapipe numpy
 ```
 ## How to Run
 - Open a terminal in this project folder.
-- Run: python main.py
+- Run:
+ ```bash
+python main.py
+```
 - A window will open showing your webcam.
 - Position the laptop so the camera has a side view of you doing pushups.
 - Do some pushups in front of the camera.
-- Press q to quit and close the window.
+- Press 'q' to quit and close the window.
 
 ## What you will see
 On the webcam window you should see:
  - A pose skeleton drawn on your body
  - A text line showing: Reps: <number>
  - A text line showing the current elbow angle in degrees
- - A text line for Feedback:
-     **Good depth** if you went low enough; 
-     **Too shallow** if the pushup was not deep enough
+ - A text line for Feedback: **Good depth** if you went low enough; **Too shallow** if the pushup was not deep enough
  - The program also saves a video file in the same folder with a name like:
-    pushup_session_YYYY-MM-DD_HH-MM-SS.avi
+    **pushup_session_YYYY-MM-DD_HH-MM-SS.avi**
 - This video includes the skeleton, rep count, and feedback overlay.
 
 ## Notes
